@@ -37,7 +37,7 @@ p{
 }
 
 .main-page-wrapper{
-    background: url("./img/hero.png") center top no-repeat, url("./img/bottom-pic.png") center bottom 278px no-repeat;
+    background: url("./img/hero.png") center top no-repeat, url("./img/bottom-pic.png") center bottom 227px no-repeat;
 }
 
 .hero{
@@ -334,6 +334,10 @@ p{
     line-height: 32px;
 }
 
+.info{
+    margin-bottom: 56px;
+}
+
 .about::before,.about__desc{
     display: inline-block;
     vertical-align: top;
@@ -386,7 +390,7 @@ p{
 .footer{
     height: 93px;
     position: relative;
-    margin-top: 79px;
+    margin-top: 25px;
 }
 
 
