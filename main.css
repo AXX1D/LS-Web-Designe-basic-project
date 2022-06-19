@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+    color: white;
+    font-size: 14px;
+    line-height: 1.42;
+    background: #17191C;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+}
+
+ul{                                         /*убираем автоматически прописанные стили*/
+    padding: 0;
+    margin: 0;
+}
+
+ul li{                                      /*убираем автоматически прописанные стили*/
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5{                         /*обнуляем автоматические отступы заголовков*/
+    margin: 0;
+    font-weight: normal;
+}
+
+p{
+    margin-top: 0;                          /*убираем базовый отступ у параграфа*/
+}
+
+* {
+    box-sizing: border-box;                /*поведение паддингов, когда они уходят внутрь блока, чтобы не растягивали его*/
+}
+
+.main-page-wrapper{
+    background: url("./img/hero.png") center top no-repeat, url("./img/bottom-pic.png") center bottom 278px no-repeat;
+}
+
+.hero{
+    margin-bottom: 235px;
+}
+
+.container{                                 /*чтобы контент выровнялся по центру, нужно этому блоку указать стили*/
+    margin: 0 auto;                         /*пишем автоматический марджин по бокам*/
+    width: 1142PX;                          /*ограничиваем его по ширине*/
+}
+
+.header {
+    height: 120px;                          /*задаем высоту хэдера*/
+    position: relative;                     /*задаем ему позиционирование относительно исходного места*/
+    margin-bottom: 101px;                   /*делаем отступ от нижней части всему хэдеру*/
+}
+
+.logo{
+    display: block;                         /*задаем блочное поведение ссылке*/
+    position: absolute;                     /*позиционируем по родителю Header*/
+    top: 15px;
+    left: 0;
+}
+
+
+.menu{
+    position: absolute;                     /*позиционируем по родителю Header*/
+    top: 35px;
+    left: 438px;
+}
+
+.contacts{
+    position: absolute;                     /*позиционируем по родителю Header*/
+    top: 20px;
+    right: 0;
+    font-style: normal;                     /*меняем шрифт, поскольку он по умолчанию курсивный в теге adress*/
+    text-align: right;                      /*выравниваем блок с контактами по правому краю*/
+}
+
+.contacts__disc{
+    font-size: 11px;
+}
+
+.logo__img{
+    height: 46px;
+    width: 198px;
+}
+
+.menu__item{
+    display: inline-block;                  /*делаем элементы меню блоком в линию*/
+    vertical-align: middle;                 /*располагаем их по-горизонтали относительно друг друга*/
+    margin-right: 51px;                     /*отталкиваем справа на 50px, чтобы задать расстояние между пунктами*/
+}
+
+.menu__item--active .menu__link{
+    color: #FF3D00;
+}
+
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.menu__link{
+    font-size: 14px;                        /*размер текста в меню*/
+    text-decoration: none;                  /*убираем базовое подчеркивание ссылки*/
+}
+
+.menu__link:hover{                          /*указываем цвет, в который окрасится ссылка при наведении*/
+    color: #FF3D00;
+}
+
+.contacts__phone{
+    display: block;                         /*блочное поведение, чтобы марджин сработал*/   
+    text-decoration: none;                  /*убираем подчеркивание*/
+    font-size: 26px;                        /*указываем размер строки*/          
+    margin-bottom: -6px;                    /*отрицательное значение, чтобы подвинуть текст-график*/
+}
+
+.contacts__dropdown-title{
+    font-size: 13px;
+    text-decoration: underline; 
+    color: #FF3D00;
+}
+
+
+.hero__text-section{                        /*здесь важно задать габариты, в которые содержимое будет укладываться случись в нем изменения*/
+    width: 776px;                           /*высота секции с текстом hero*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 72px;                        /*размер шрифта*/
+    font-weight: 800;                       /*толщина шрифта*/                 
+    line-height: 1.4;                       /*указываем межстрочный интервал (не может быть меньше единицы)*/
+    margin-bottom: 12px;                    /*меняем относительно подзаголовка снизу*/
+    text-transform: uppercase;  
+}
+
+.hero__subtitle{
+    font-size: 18px;
+    margin-bottom: 38.5px;
+}
+
+.btn{
+    background: #FF3D00;                  /*заливка фона*/
+    border-radius: 35px;                    /*скругление углов*/
+    padding: 18px 54px;                     /*не пишем жесткие размеры, вместо них указываем отступы на случай, если текст будет другой*/
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;              /*указываем, что все буквы будут в верхнем регистре*/
+    text-decoration: none;
+    display: inline-block;                  /*задали блочное поведение, чтобы можно было писать размеры легитимно*/
+}
+
+.btn--color--white{
+    background: white;                  
+    border-style: solid;
+    border-color: #FF5500;
+    color: #FF5500;
+}
+
+.btn--color--white:hover{
+    background: #FF5500;                  
+    color: white;
+}
+
+.btn--size--small{                        /*для мелкой кнопки внизу*/
+    padding: 18px 38px;
+}
+
+
+.btn:hover{
+    background: #FF5500;
+}
+
+.service{
+    margin-bottom: 178px;
+}
+
+.offers__item{
+    min-height: 476px;                     /*Задали минимальную высоту блочка, чтобы он мог растягиваться*/
+    background: white;                   
+    border-radius: 5px;
+    display: inline-block;                 /*выстроили блочки в линию*/
+    margin-right: 24px;
+    width: 362px;
+    vertical-align: bottom;                /*пришлось выровнять блоки по высоте*/
+}
+
+.offers__img{
+    margin-top: 38px;
+    margin-left: 27px;
+}
+
+.offers__item:last-child{
+    margin-right: 0;
+}
+
+.offers__content{
+    padding: 36px 21px;                   /*Общий отступ всего текста от краев*/
+    padding-top: 24px;
+    color: black;
+}
+
+.offers__title{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.offers__terms-cell{
+    display: inline-block;              /*делаем их блочными и в линию*/
+    vertical-align: top;                /*ровняем по верху*/
+    width: 123px;                       /*задаем им размер*/
+    margin-right: 56px;                 /*задаем им отступ*/
+    margin-bottom: 27px;
+    font-size: 16px; 
+    
+}
+
+
+.offers__terms-cell:last-child{         /*убираем отступ у последнего из них*/
+    margin-right: 0;
+}
+
+
+.offers__description{
+    margin-right: 28px;
+    font-size: 14px;
+    margin-bottom: 26.2px;
+}
+
+.news {
+    margin-bottom: 55px;
+}
+
+.promotions__title{
+    font-size: 36px;                        /*размер шрифта*/
+    font-weight: 800;                       /*толщина шрифта*/                 
+    line-height: 1.4;                       /*указываем межстрочный интервал (не может быть меньше единицы)*/
+    margin-bottom: 48px;                    /*меняем относительно подзаголовка снизу*/
+    text-transform: uppercase;  
+}
+
+.news__item{
+    width: 557px;
+    display: inline-block;
+    vertical-align: top;               /*указываем выравнивание, если блок будет расширяться*/
+    position: relative;
+    margin-right: 22px;
+}
+
+
+
+.news__item:last-child{
+    margin-right: 0;
+}
+
+.news__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                /*Свойство, чтобы картинка целиком заполнила блок и сама масштабировалась*/
+}
+
+.news__text-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 83px 26px 32px; 
+    min-height: 140px;               /*сохраняет свойство уровня внутреннего текста, прижатого bottom*/
+}
+
+.news__date{
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.news__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.news__desc{
+    font-size: 16px;
+
+}
+
+.pager{
+    text-align: center;              /*чтобы все элементы внутри стилизовались по центру*/
+    margin-bottom: 126px;
+}
+
+.pager__display,.pager__list{        /*выравниваем буквы*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__display {
+    margin-right: 25px;
+}
+
+.pager__item{                        /*выравниваем цифры*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__item--active .pager__link{
+    background: #FF5500;
+}
+
+.pager__link{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.about::before,.about__desc{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about::before{
+    content: "";
+    width: 490px;
+    height: 505px;
+    background: url("./img/cameraman.png") center center / cover no-repeat;   /*ровняем по центру, задаем заполнение блока*/
+}
+
+.about__desc{
+    color: black;
+    background: white;
+    padding: 70px 199px 70px 84px;
+    width: 785px;
+    margin-left: -140px;
+    margin-top: 96px;
+    height: 455px;
+    min-height: 455px;
+    border-radius: 5px;
+}
+
+.about__title{
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.about__desc-text{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 47px;
+}
+
+.about__desc-text p{                         /*сразу стилизуем отступ для параграфа, если туда решат добавить их несколько*/
+    margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child{
+    margin-bottom: 0;
+}
+
+.footer-container__content {
+    border-top: 1px solid #454545;
+}
+
+.footer{
+    height: 93px;
+    position: relative;
+    margin-top: 79px;
+}
+
+
+.socials{
+    position: absolute;
+    top: 49px;
+    right: 300px;
+}
+
+.social__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.social__item:last-child{
+    margin-right: 0;
+}
+
+.contacts__disc{
+    color: #9A9A9A;
+}
+
+
+.socials__link{
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+
+.social__item--icon--telegram .socials__link{
+    background-image: url("./img/t.png");
+}
+.social__item--icon--telegram .socials__link:hover{
+    background-image: url("./img/th.png");
+}
+
+.social__item--icon--vk .socials__link{
+    background-image: url("./img/vk.png");
+}
+.social__item--icon--vk .socials__link:hover{
+    background-image: url("./img/vkh.png");
+}
+
+.social__item--icon--fb .socials__link{
+    background-image: url("./img/fb.png");
+}
+.social__item--icon--fb .socials__link:hover{
+    background-image: url("./img/fbh.png");
+}
+
+.social__item--icon--insta .socials__link{
+    background-image: url("./img/in.png");
+}
+.social__item--icon--insta .socials__link:hover{
+    background-image: url("./img/inh.png");
+}
