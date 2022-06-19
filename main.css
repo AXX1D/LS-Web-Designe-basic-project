@@ -66,12 +66,16 @@ p{
 .menu{
     position: absolute;                     /*позиционируем по родителю Header*/
     top: 35px;
-    left: 438px;
+    left: 439px;
+}
+
+.menu--footer {
+    left: 328px;
 }
 
 .contacts{
     position: absolute;                     /*позиционируем по родителю Header*/
-    top: 20px;
+    top: 22px;
     right: 0;
     font-style: normal;                     /*меняем шрифт, поскольку он по умолчанию курсивный в теге adress*/
     text-align: right;                      /*выравниваем блок с контактами по правому краю*/
@@ -293,7 +297,7 @@ p{
 
 .pager{
     text-align: center;              /*чтобы все элементы внутри стилизовались по центру*/
-    margin-bottom: 126px;
+    margin-bottom: 145px;
 }
 
 .pager__display,.pager__list{        /*выравниваем буквы*/
@@ -303,19 +307,25 @@ p{
 
 .pager__display {
     margin-right: 25px;
+    font-size: 16px;
+
 }
 
 .pager__item{                        /*выравниваем цифры*/
     display: inline-block;
     vertical-align: middle;
+    margin-right: -2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.pager__item--active .pager__link{
+.pager__item--active{
     background: #FF5500;
 }
 
 .pager__link{
-    display: block;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -382,14 +392,14 @@ p{
 
 .socials{
     position: absolute;
-    top: 49px;
-    right: 300px;
+    top: 27px;
+    right: 262px;
 }
 
 .social__item{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 .social__item:last-child{
