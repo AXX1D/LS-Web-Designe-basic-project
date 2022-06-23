@@ -1,0 +1,45 @@
+.pager{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+
+}
+
+.pager__display {
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.pager__list{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.pager__item{
+    text-align: center;
+    margin-right: -2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pager__item--active{
+    background: #FF5500;
+    color: white;
+}
+
+.pager__link{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 32px;
+    cursor: alias;
+}

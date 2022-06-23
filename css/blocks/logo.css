@@ -1,0 +1,13 @@
+.logo{
+    display: block;                         /*задаем блочное поведение ссылке*/
+    margin-right: 250px;
+}
+
+.logo--footer{
+    margin-right: 150px;
+}
+
+.logo__img{
+    height: 46px;
+    width: 198px;
+}

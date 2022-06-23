@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    color: white;
+    font-size: 14px;
+    line-height: 1.42;
+    background: #17191C;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 1200px;
+    min-height: 100%;
+}
+
+.wrapper__content {
+    flex: 1;
+    margin-bottom: 181px;
+}
+
+.main-page-wrapper{
+    background: url("/img/hero.png") center top no-repeat, url("/img/bottom-pic.png") center bottom 276px no-repeat;
+}
+
+.container{                                 /*чтобы контент выровнялся по центру, нужно этому блоку указать стили*/
+    margin: 0 auto;                         /*пишем автоматический марджин по бокам*/
+    width: 1142PX;                          /*ограничиваем его по ширине*/
+    /* display: flex; */
+}
+
+a {
+    color: inherit;
+}
+
+ul{                                         /*убираем автоматически прописанные стили*/
+    padding: 0;
+    margin: 0;
+}
+
+ul li{                                      /*убираем автоматически прописанные стили*/
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5{                         /*обнуляем автоматические отступы заголовков*/
+    margin: 0;
+    font-weight: normal;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p{
+    margin-top: 0;                          /*убираем базовый отступ у параграфа*/
+}
+
+* {
+    box-sizing: border-box; /* команда всем блокам, чтобы элемент внутри будет ограничиваться бордером или content-box при процентных значениях*/
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

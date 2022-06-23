@@ -1,0 +1,7 @@
+.promotions__title{
+    font-size: 36px;                        /*размер шрифта*/
+    font-weight: 800;                       /*толщина шрифта*/                 
+    line-height: 1.4;                       /*указываем межстрочный интервал (не может быть меньше единицы)*/
+    margin-bottom: 48px;                    /*меняем относительно подзаголовка снизу*/
+    text-transform: uppercase;  
+}

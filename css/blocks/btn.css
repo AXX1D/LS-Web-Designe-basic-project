@@ -1,0 +1,31 @@
+.btn{
+    background: #FF3D00;                  /*заливка фона*/
+    border-radius: 35px;                    /*скругление углов*/
+    padding: 18px 54px;                     /*не пишем жесткие размеры, вместо них указываем отступы на случай, если текст будет другой*/
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;              /*указываем, что все буквы будут в верхнем регистре*/
+    text-decoration: none;
+    display: inline-block;                  /*задали блочное поведение, чтобы можно было писать размеры легитимно*/
+}
+
+.btn--color--white{
+    background: white;                  
+    border-style: solid;
+    border-color: #FF5500;
+    color: #FF5500;
+}
+
+.btn--color--white:hover{
+    background: #FF5500;                  
+    color: white;
+}
+
+.btn--size--small{                        /*для мелкой кнопки внизу*/
+    padding: 18px 38px;
+}
+
+
+.btn:hover{
+    background: #FF5500;
+}

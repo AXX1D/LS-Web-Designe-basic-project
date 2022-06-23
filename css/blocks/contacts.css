@@ -1,0 +1,27 @@
+.contacts{
+    top: 22px;
+    right: 0;
+    font-style: normal;                     /*меняем шрифт, поскольку он по умолчанию курсивный в теге adress*/
+    text-align: right;                      /*выравниваем блок с контактами по правому краю*/
+}
+
+.contacts__disc{
+    font-size: 11px;
+}
+
+.contacts__phone{
+    display: block;                         /*блочное поведение, чтобы марджин сработал*/   
+    text-decoration: none;                  /*убираем подчеркивание*/
+    font-size: 26px;                        /*указываем размер строки*/          
+    margin-bottom: -6px;                    /*отрицательное значение, чтобы подвинуть текст-график*/
+}
+
+.contacts__dropdown-title{
+    font-size: 13px;
+    text-decoration: underline; 
+    color: #FF3D00;
+}
+
+.contacts__disc{
+    color: #9A9A9A;
+}

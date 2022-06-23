@@ -1,0 +1,52 @@
+.offers{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.offers__item{
+    min-height: 476px;                     /*Задали минимальную высоту блочка, чтобы он мог растягиваться*/
+    background: white;                   
+    border-radius: 5px;
+    width: calc(100% / 3 - 16px);
+    vertical-align: bottom;                /*пришлось выровнять блоки по высоте*/
+}
+
+.offers__img{
+    margin-top: 38px;
+    margin-left: 27px;
+}
+
+.offers__content{
+    padding: 36px 21px;                   /*Общий отступ всего текста от краев*/
+    padding-top: 24px;
+    color: black;
+}
+
+.offers__title{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.offers__terms-cell{
+    display: inline-block;              /*делаем их блочными и в линию*/
+    vertical-align: top;                /*ровняем по верху*/
+    width: 123px;                       /*задаем им размер*/
+    margin-right: 56px;                 /*задаем им отступ*/
+    margin-bottom: 27px;
+    font-size: 16px; 
+    
+}
+
+
+.offers__terms-cell:last-child{         /*убираем отступ у последнего из них*/
+    margin-right: 0;
+}
+
+
+.offers__description{
+    margin-right: 28px;
+    font-size: 14px;
+    margin-bottom: 26.2px;
+}

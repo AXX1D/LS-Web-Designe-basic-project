@@ -1,0 +1,44 @@
+.about{
+    display: flex;
+}
+
+.about::before{
+    display: block;
+    content: "";
+    width: 490px;
+    height: 505px;
+    background: url("/img/cameraman.png") center center / cover no-repeat;   /*ровняем по центру, задаем заполнение блока*/
+}
+
+.about__desc{
+    color: black;
+    background: white;
+    padding: 70px 199px 70px 84px;
+    max-width: 785px;
+    margin-left: -140px;
+    margin-top: 96px;
+    height: 455px;
+    min-height: 455px;
+    border-radius: 5px;
+}
+
+.about__title{
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.about__desc-text{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 47px;
+}
+
+.about__desc-text p{                         /*сразу стилизуем отступ для параграфа, если туда решат добавить их несколько*/
+    margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child{
+    margin-bottom: 0;
+}
