@@ -4,10 +4,10 @@
 
 .about::before{
     display: block;
-    content: "";
+    content: "../../img/cameraman.png";
     width: 490px;
     height: 505px;
-    background: url("./img/cameraman.png") center center / cover no-repeat;   /*ровняем по центру, задаем заполнение блока*/
+    background: url("") center center / cover no-repeat;   /*ровняем по центру, задаем заполнение блока*/
 }
 
 .about__desc{
