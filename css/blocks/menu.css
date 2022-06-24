@@ -1,8 +1,8 @@
 
 
-.menu--footer {
-    left: 328px;
-}
+/* .menu--footer {
+    margin-right: 100px;
+} */
 
 .menu__item{
     display: inline-block;                  /*делаем элементы меню блоком в линию*/

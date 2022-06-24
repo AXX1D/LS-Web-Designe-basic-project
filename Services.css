@@ -131,6 +131,11 @@
 
 .partners__item{
     margin-left: 20px;
+    filter: grayscale(100%);
+}
+
+.partners__item:hover{
+    filter: grayscale(0);
 }
 
 .partners__item:nth-child(4n + 1) {
