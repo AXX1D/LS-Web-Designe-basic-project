@@ -43,3 +43,7 @@
     line-height: 32px;
     cursor: alias;
 }
+
+.pager--theme--black{
+ margin-bottom: 20px;
+}

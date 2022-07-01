@@ -1,13 +1,9 @@
 
 
-/* .menu--footer {
-    margin-right: 100px;
-} */
-
 .menu__item{
-    display: inline-block;                  /*делаем элементы меню блоком в линию*/
-    vertical-align: middle;                 /*располагаем их по-горизонтали относительно друг друга*/
-    margin-right: 51px;                     /*отталкиваем справа на 50px, чтобы задать расстояние между пунктами*/
+    display: inline-block;                 
+    vertical-align: middle;                 
+    margin-right: 51px;                     
 }
 
 .menu__item--active .menu__link{
@@ -19,10 +15,11 @@
 }
 
 .menu__link{
-    font-size: 14px;                        /*размер текста в меню*/
-    text-decoration: none;                  /*убираем базовое подчеркивание ссылки*/
+    font-size: 14px;                     
+    text-decoration: none;
+    transition: 0.4s;                  
 }
 
-.menu__link:hover{                          /*указываем цвет, в который окрасится ссылка при наведении*/
+.menu__link:hover{                          
     color: #FF3D00;
 }

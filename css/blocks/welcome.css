@@ -1,0 +1,62 @@
+.welcome{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url("../../img/bg.png") center center/ cover no-repeat;
+}
+
+.welcome::before{
+    content: "";
+    background: url("../../img/rec.png") center center/ contain no-repeat;
+    position: absolute;
+    margin: auto;
+    min-width: 68%;
+    min-height: 68%;
+}
+
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: hello 1.5s  ;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.central__logo{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+@keyframes hello{
+    0%{
+        transform: rotate(0) scale(0.1);
+    }
+
+    25%{
+        animation-timing-function: cubic-bezier(.44,.3,.53,.97);
+        transform: rotate(-15deg);
+    }
+
+    45%{
+        transform: rotate(10deg) scale(1);
+    }
+
+    55%{
+        transform: rotate(-2deg);
+    }
+
+    65%{
+        transform: rotate(0);
+    
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

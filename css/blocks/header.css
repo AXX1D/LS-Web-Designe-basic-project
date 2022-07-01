@@ -10,11 +10,6 @@
     margin-bottom: 35px;
 }
 
-/* .header__col{
-    display: flex;
-    align-items: center;
-} */
-
 .hero__content--align--righ{
     justify-content: flex-end;
 }

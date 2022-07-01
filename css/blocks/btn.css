@@ -1,12 +1,13 @@
 .btn{
-    background: #FF3D00;                  /*заливка фона*/
-    border-radius: 35px;                    /*скругление углов*/
-    padding: 18px 54px;                     /*не пишем жесткие размеры, вместо них указываем отступы на случай, если текст будет другой*/
+    background: #FF3D00;                 
+    border-radius: 35px;                   
+    padding: 18px 54px;                    
     color: white;
     font-weight: bold;
-    text-transform: uppercase;              /*указываем, что все буквы будут в верхнем регистре*/
+    text-transform: uppercase;              
     text-decoration: none;
-    display: inline-block;                  /*задали блочное поведение, чтобы можно было писать размеры легитимно*/
+    display: inline-block;    
+    transition: 0.5s;             
 }
 
 .btn--color--white{
@@ -16,15 +17,29 @@
     color: #FF5500;
 }
 
+
 .btn--color--white:hover{
     background: #FF5500;                  
     color: white;
 }
 
-.btn--size--small{                        /*для мелкой кнопки внизу*/
+
+.btn--color--grey{
+    background: #8E8E8E;
+}
+
+.btn--color--grey:hover{
+    background: #FF3D00;
+}
+
+.btn--size--small{                        
     padding: 18px 38px;
 }
 
+.welcome--btn--big{
+    padding: 18px 58px;
+    background: #FF5500;
+}
 
 .btn:hover{
     background: #FF5500;
